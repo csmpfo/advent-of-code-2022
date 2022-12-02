@@ -1,8 +1,5 @@
 input = File.read("input.txt").split("\n")
 
-win = Hash["A" => "C", "B" => "A", "C" => "B"]
-lose= Hash["C" => "A", "A" => "B", "B" => "C"]
-
 values = Hash["A X" => 3, 
               "A Y" => 4, 
               "A Z" => 8,
