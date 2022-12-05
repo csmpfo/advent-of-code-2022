@@ -10,7 +10,7 @@ input.each_with_index do |item, j|
   #four is high end of second range
   #one       two       one          two
   #    three      four       three       four
-  
+
   if one <= three && three <= two || three <= two && two <= four || three <= one && one <=four || one <= four && four <= two
     num_overlaps += 1
   end
