@@ -9,7 +9,7 @@ input.each_with_index do |item, i|
   beginning = item[-6].to_i
   amount = item[4, 3].to_i
 
-  puts annoying_array[destination - 1]
+  #puts annoying_array[destination - 1]
   amount.to_i.times do |i|
     moving_thing = annoying_array[beginning - 1][-1]
     annoying_array[beginning - 1].pop()
