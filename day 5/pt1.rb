@@ -2,8 +2,6 @@ input = File.read("input.txt").split("\n")
 
 annoying_array = ["LNWTD".split(""), "CPH".split(""), "WPHNDGMJ".split(""), "CWSNTQL".split(""), "PHCN".split(""), "THNDMWQB".split(""), "MBRJGSL".split(""), "ZNWGVBRT".split(""), "WGDNPL".split("")]
 
-
-
 input.each_with_index do |item, i|
   destination = item[-1].to_i
   beginning = item[-6].to_i
