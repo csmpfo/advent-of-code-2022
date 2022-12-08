@@ -11,10 +11,8 @@ input.each do |command|
     working_dir << command
   elsif /\d+ /.match? command
     command = command.sub(/ (?<=\d )(\S+)/, "").to_i
-    total_dir_name = ""
-
     working_dir.each do |elem|
-      all_folders[total_dir_name += elem] += command.to_i
+      all_folders[elem] += command.to_i
     end
   end
 end
